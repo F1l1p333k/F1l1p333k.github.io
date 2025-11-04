@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moje osobní stránka</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+
+      /* Navigace */
+      nav {
+        background-color: #222;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-weight: 500;
+      }
+
+      nav a:hover {
+        color: #00b4d8;
+      }
+
+      /* Úvod */
+      #welcome {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      #welcome h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+      }
+
+      #welcome p {
+        font-size: 1.3rem;
+        color: #555;
+      }
+
+      /* Projekty */
+      #projects {
+        padding: 4rem 1rem;
+        text-align: center;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .project {
+        background: white;
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .project img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .project h3 {
+        margin: 0.8rem 0 0.3rem;
+      }
+
+      /* Kontakt */
+      #contact {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 3rem 1rem;
+      }
+
+      #contact a {
+        color: #00b4d8;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+
+      footer {
+        background: #111;
+        color: #aaa;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="#welcome">O mně</a>
+      <a href="#projects">Projekty</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+
+    <section id="welcome">
+      <h1>Ahoj, jsem <span style="color:#00b4d8;">Filip</span></h1>
+      <p>Začínající webový vývojář</p>
+    </section>
+
+    <section id="projects">
+      <h2>Moje projekty</h2>
+      <div class="project-grid">
+       
+        <div class="project">
+          <img src="https://www.fctescomazlin.cz/wp-content/uploads/2016/11/4ab517a333f84a4164a301371b0c6cbe_large-1024x576.jpeg" alt="Projekt 2" />
+          <h3>Web o týmu Arsenal</h3>
+          <p>Informace o Arsenal.</p>
+        <a href="https://f1l1p333k.github.io/prvniprojekt/">Odkaz na první projekt</a>
+
+        </div>
+       
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontaktuj mě</h2>
+      <p>Rád spolupracuji na zajímavých projektech!</p>
+      <p>
+        📧 <a href="mailto:kanokfilip@seznam.cz">kanokfilip@seznam.cz</a><br />
+        💼 <a href="https://github.com/F1l1p333k" target="_blank">GitHub</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2025 Filip – Osobní web. Vytvořeno s ❤️ v HTML & CSS.
+      Inspirace: https://personal-portfolio.freecodecamp.rocks/
+    </footer>
+  </body>
+</html>
